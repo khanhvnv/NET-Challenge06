@@ -1,0 +1,55 @@
+﻿@* @model List<SharedLibrary.Models.ProductDto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="homepage-container">
+    <!-- Category Menu Section -->
+    <nav class="category-menu">
+        <h2>Store</h2>
+        <ul class="category-list">
+            <li><a href="#">Shop the Latest</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Tablet</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Accessories</a></li>
+        </ul>
+    </nav>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>New arrivals</h2>
+        <div class="products-container">
+            @foreach (var product in Model)
+            {
+                <div class="product-item">
+                    <h3>@product.Name</h3>
+                    <p>@product.Description</p>
+                    <p>Price: $@product.Price</p>
+                </div>
+            }
+        </div>
+    </section>
+</div> *@
+
+@model CategoryProject.Models.HomeViewModel
+@{
+	    ViewData["Title"] = "Home Page";
+}
+<div class="col-md-6">
+    <h2>New arrivals</h2>
+    <div class="d-flex flex-nowrap" style="gap: 1px; overflow-x: auto;"> 
+    @foreach (var product in Model.FeaturedProducts)
+    {
+        <div class="products" style="width: 450px; height: 380px; margin-bottom: 1px;"> 
+            <img src="@product.Images" class="product-img-top" alt="@product.Name ?? "No Image"" style="width: 100%; height: auto;" /> 
+            <div class="products-container">
+                <h2 class="product-item-title">@product.Name</h2> 
+                <h3 class="product-item-description">@product.Description</h3> 
+                <p class="product-item-price">Price: @product.Price.ToString($"$ 0")</p> 
+            </div>
+        </div>
+    }
+    </div>
+</div>

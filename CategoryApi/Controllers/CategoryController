@@ -1,0 +1,41 @@
+using Microsoft.AspNetCore.Mvc;
+using CategoryApi.Models;
+using CategoryApi.Services;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using SharedLibrary.Models;
+
+namespace CategoryApi.Controllers
+{
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CategoryController : ControllerBase
+    {
+        // Action methods here
+    }   
+    public class CategoryController : Controller
+    {
+        private readonly CategoryService _categoryService;
+
+        public CategoryController(CategoryService categoryService)
+        {
+            _categoryService = categoryService;
+        }
+        public async Task<IActionResult> Index()
+        {
+            var categories = await _categoryService.GetCategoriesAsync();
+            return View(categories);
+        }
+        [HttpGet]
+        public IEnumerable<CategoryDto> GetCategories()
+        {
+            return new List<CategoryDto>
+            {
+                new CategoryDto { Id = 1, Name = "Category1", Description = "Description1" },
+                new CategoryDto { Id = 2, Name = "Category2", Description = "Description2" }
+            };
+        }
+
+    }
+}
