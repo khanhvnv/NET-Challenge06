@@ -1,10 +1,7 @@
 # Starter app for Create a web UI with ASP.NET Core
 
-Welcome! This is the homework for the Challenge 05:
-- Create class library project
-- Create CategoryDto in class library
-- add reference class library project to API and .Net MVC
-- Use the CategoryDto from class library instead of creating separately in both API and .Net MVC
+Welcome! This is the homework for the Challenge 06:
+- Start building Home Page: Category Menu, Featured Product (Hard-coded data)
 
 ## Completed version
 
@@ -61,20 +58,14 @@ In a terminal, run the following command to trust the .NET development certifica
 	dotnet dev-certs https --trust
 Restart both projects after running this command.
 	
-Step 6: Run Both Projects and Verify the Results
+Step 6: Verify the Home Page
 	
-	1. Run the Minimal API (CategoryApi) project on its assigned port.
-		○ Open the terminal in CategoryApi project folder and run:	dotnet run
-		○ Open a browser and navigate to http://localhost:5000/categories (or the appropriate port for your API project).
-		
-	2. Run the MVC Project (CategoryProject) and navigate to the Category page.
+	1. Run the Application: Launch CategoryProject.
 		○ Open the terminal in CategoryProject project folder and run:	dotnet run
-		○ Open a browser and navigate to http://localhost:5001/Category (or the appropriate port for your MVC project).
-
-Verification
-- The Category page should now retrieve and display category data from the API using CategoryDto from the shared library.
-- With these steps, both projects will utilize CategoryDto from the shared library, ensuring consistency across the solution.
-
+	2. Access the Home Page: Go to http://localhost:PORT (input the appropriate port for your CategoryProject project), and you should see:
+		○ A Category Menu with static links.
+		○ A Featured Product section (New Arrivals) displaying hard-coded products.
+		
 Notice:
 Clear SSL Cache and Restart
 Sometimes, SSL issues can be due to cached certificates. You can try restarting your machine to clear any cached SSL settings and ensure a fresh connection.
