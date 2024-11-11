@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CategoryApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241110155933_InitialCreate")]
+    [Migration("20241111144610_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -46,26 +46,26 @@ namespace CategoryApi.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Designed to be loved",
-                            Name = "iPhone"
+                            Description = "Bánh kem, bánh kem bắp, bánh kem nhân mứt",
+                            Name = "Bánh kem"
                         },
                         new
                         {
                             Id = 2,
-                            Description = "If you can dream it, Mac can do it",
-                            Name = "Mac"
+                            Description = "Bánh mì, bánh quy, donut",
+                            Name = "Bánh nướng"
                         },
                         new
                         {
                             Id = 3,
-                            Description = "Touch, draw, and type on one magical device",
-                            Name = "iPad"
+                            Description = "Bánh flan, bánh su kem, pudding ",
+                            Name = "Bánh lạnh"
                         },
                         new
                         {
                             Id = 4,
-                            Description = "The ultimate device for a healthy life",
-                            Name = "Watch"
+                            Description = "Kem vani, kem đậu xanh, kem dâu, kem chuối",
+                            Name = "Cà rem"
                         });
                 });
 #pragma warning restore 612, 618

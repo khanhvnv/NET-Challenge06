@@ -23,9 +23,9 @@ namespace CategoryProject.Controllers
             // Hard-coded data for Featured Products
             var featuredProducts = new List<ProductDto>
             {
-                new ProductDto { Id = 1, Name = "iPhone 16 Pro", Description = $"Your new iPhone 16 Pro.\n iOS 18. Customize. Stylize. Mesmerize.\n Just the way you want it.", Price = 999.00M, Images = "/images/iphone16Pro.jpg", CreatedDate = new DateOnly(2024,11,08) },
-                new ProductDto { Id = 2, Name = "MacBook Pro", Description = $"Designed with the earth in mind", Price = 1599.00M, Images = "/images/macbookPro.jpg", CreatedDate = new DateOnly(2024,11,08) },
-                new ProductDto { Id = 2, Name = "iPad Mini", Description = $"The full iPad experience in an ultraportable design.", Price = 499.00M, Images = "/images/iPadMini.jpg", CreatedDate = new DateOnly(2024,11,08) },
+                new ProductDto { Id = 1, Name = "Bánh kem nhân dâu", Description = $"Như 1 trái dâu tươi đỏ mọng", Price = 335.000M, Images = "/images/Banh-Kem-Dau-1.jpg", CreatedDate = new DateOnly(2024,11,08) },
+                new ProductDto { Id = 2, Name = "Bánh quy bơ đậu phộng", Description = $"Thơm ngon giòn béo", Price = 25.000M, Images = "/images/Quy-Bo-Dau-Phong-2.jpg", CreatedDate = new DateOnly(2024,11,08) },
+                new ProductDto { Id = 2, Name = "Bánh Flan", Description = $"Núng nính tan mềm trên đầu lưỡi", Price = 12.000M, Images = "/images/Banh-Flan-2.jpg", CreatedDate = new DateOnly(2024,11,08) },
             };
 
             var model = new HomeViewModel

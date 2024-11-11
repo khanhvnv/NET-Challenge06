@@ -71,18 +71,23 @@ body {
   border-radius: 4px;
 }
 
-.product-item h3 {
+.product-item h5 {
   margin: 0.5rem 0;
 }
 
-.product-item-description {
+.product-description {
   margin: 0.5rem 0;
   font-size: 14px;  
 }
-.product-item-price {
+.product-price {
   margin: 0.5rem 0;
 }
-.product-item-title {
+
+.product-item p {
+  margin: 0.3rem 0;
+}
+
+.product-title {
   font-size: 22px; 
   display: -webkit-box;
   -webkit-line-clamp: 2; /* display maximum 2 rows */

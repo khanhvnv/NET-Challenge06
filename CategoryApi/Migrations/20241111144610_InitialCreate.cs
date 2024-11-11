@@ -31,10 +31,10 @@ namespace CategoryApi.Migrations
                 columns: new[] { "Id", "Description", "Name" },
                 values: new object[,]
                 {
-                    { 1, "Designed to be loved", "iPhone" },
-                    { 2, "If you can dream it, Mac can do it", "Mac" },
-                    { 3, "Touch, draw, and type on one magical device", "iPad" },
-                    { 4, "The ultimate device for a healthy life", "Watch" }
+                    { 1, "Bánh kem, bánh kem bắp, bánh kem nhân mứt", "Bánh kem" },
+                    { 2, "Bánh mì, bánh quy, donut", "Bánh nướng" },
+                    { 3, "Bánh flan, bánh su kem, pudding ", "Bánh lạnh" },
+                    { 4, "Kem vani, kem đậu xanh, kem dâu, kem chuối", "Cà rem" }
                 });
         }
 

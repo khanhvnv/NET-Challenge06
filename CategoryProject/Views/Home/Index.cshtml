@@ -37,7 +37,7 @@
 @{
 	    ViewData["Title"] = "Home Page";
 }
-<div class="col-md-6">
+@* <div class="col-md-6">
     <h2>New arrivals</h2>
     <div class="d-flex flex-nowrap" style="gap: 1px; overflow-x: auto;"> 
     @foreach (var product in Model.FeaturedProducts)
@@ -45,11 +45,31 @@
         <div class="products" style="width: 450px; height: 380px; margin-bottom: 1px;"> 
             <img src="@product.Images" class="product-img-top" alt="@product.Name ?? "No Image"" style="width: 100%; height: auto;" /> 
             <div class="products-container">
-                <h2 class="product-item-title">@product.Name</h2> 
-                <h3 class="product-item-description">@product.Description</h3> 
-                <p class="product-item-price">Price: @product.Price.ToString($"$ 0")</p> 
+                <h2 class="product-title">@product.Name</h2> 
+                <h3 class="product-description">@product.Description</h3> 
+                <p class="product-price">Price: @product.Price.ToString($"$ 0")</p> 
             </div>
         </div>
     }
     </div>
-</div>
+</div> *@
+<div class="homepage-container">
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Sản phẩm yêu thích</h2>        
+        <div class="d-flex flex-nowrap" style="gap: 1px; overflow-x: auto;"> 
+        @* <div class="products-container"> *@
+        @foreach (var product in Model.FeaturedProducts)
+        {
+            <div class="products" style="width: 450px; height: 500px; margin-bottom: 1px;"> 
+                <img src="@product.Images" class="product-img-top" alt="@product.Name ?? "No Image"" style="width: 100%; height: auto;" /> 
+                <div class="product-item">
+                    <h5>@product.Name</h5>
+                    <p>@product.Description</p>
+                    <p>Price: $@product.Price</p>
+                </div>
+            </div>
+        }
+        </div>
+    </section>
+</div> 

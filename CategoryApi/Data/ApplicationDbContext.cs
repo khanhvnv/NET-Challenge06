@@ -16,10 +16,10 @@ namespace CategoryApi.Data
             base.OnModelCreating(modelBuilder);
             // Seed data
             modelBuilder.Entity<Category>().HasData(
-                new Category { Id = 1, Name = "iPhone", Description ="Designed to be loved" },
-                new Category { Id = 2, Name = "Mac", Description = "If you can dream it, Mac can do it"},
-                new Category { Id = 3, Name = "iPad", Description = "Touch, draw, and type on one magical device"},
-                new Category { Id = 4, Name = "Watch", Description = "The ultimate device for a healthy life"}
+                new Category { Id = 1, Name = "Bánh kem", Description ="Bánh kem, bánh kem bắp, bánh kem nhân mứt" },
+                new Category { Id = 2, Name = "Bánh nướng", Description = "Bánh mì, bánh quy, donut"},
+                new Category { Id = 3, Name = "Bánh lạnh", Description = "Bánh flan, bánh su kem, pudding "},
+                new Category { Id = 4, Name = "Cà rem", Description = "Kem vani, kem đậu xanh, kem dâu, kem chuối"}
             );
         }
     }
