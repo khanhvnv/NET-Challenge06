@@ -1,6 +1,38 @@
-﻿@{
+﻿@model CategoryProject.Models.HomeViewModel
+@{
     ViewData["Title"] = "Liên hệ";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Địa chỉ liên hệ</p>
+@* <p>Địa chỉ liên hệ</p> *@
+
+<div class="contact-container">
+    <!-- Contact Section -->
+    <section>
+        @* <h2>Địa chỉ liên hệ</h2> *@
+        <div class="d-flex flex-nowrap" style="gap: 1px; overflow-x: auto;">
+            <div class="contact-info" style="width: 450px; height: 380px; margin-bottom: 1px;"> 
+            <h5 class="contact-district text-uppercase"  style="color: orange ">
+                Quận 3 
+            </h5>               
+            <h3 class="text-uppercase fs-16 color-green fw-medium mb-1" style="color: lightgreen">
+                Bingo Trần Văn Đang
+            </h3>
+            <div class="cuaHangContent">
+                <ul class="list-unstyled d-flexx flex-wrapx mb-1 align-items-center justify-content-between">
+                    <li class="py-1">
+                        <a>
+                            <img style="margin-top: -3px;" height="16" src="/images/icon-map.svg">
+                            79 Trần Văn Đang, P.9, TP.HCM															
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img style="margin-top: -3px;" height="15" src="/images/icon-phone-v2.svg">
+                            0912 345 678															
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>               
